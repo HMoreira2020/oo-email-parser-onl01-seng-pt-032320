@@ -1,7 +1,7 @@
 require 'pry'
 
 class EmailAddressParser 
-  attr_accessor :email_addresses 
+   attr_accessor :email_addresses 
   
   
   def initialize(email_addresses)
@@ -10,7 +10,7 @@ class EmailAddressParser
   end 
   
   
-  def parse 
+  def parse
     parsed = @email_addresses.split(/[\s,]/).reject{|e| e.empty?}.uniq 
   end
   
